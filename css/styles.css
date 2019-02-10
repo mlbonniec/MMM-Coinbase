@@ -1,0 +1,21 @@
+/*****************************************************
+ * Magic Mirror                                      *
+ * MMM-Coinbase CSS                                  *
+ *                                                   *
+ * By Mathis Le Bonniec                              *
+ *                                                   *
+ * Edit this file ONLY if you know what you're doing *
+ *****************************************************/
+
+#bitcoinCounter {display: inline-block; margin: 0;}
+
+.fab {
+    font-family: 'FontAwesome';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "mmm-coinbase",
+  "version": "1.0.0",
+  "description": "A module for MagicMirror 2 displaying the balance of Coinbase account.",
+  "main": "MMM-Coinbase.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Porcinet/MMM-Coinbase.git"
+  },
+  "keywords": [
+    "magic",
+    "mirror",
+    "2",
+    "coinbase",
+    "module"
+  ],
+  "author": "Porcinet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Porcinet/MMM-Coinbase/issues"
+  },
+  "homepage": "https://github.com/Porcinet/MMM-Coinbase#readme",
+  "dependencies": {
+    "coinbase": "^2.0.8"
+  }
+}
