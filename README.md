@@ -57,8 +57,8 @@ Here is the configurable part of the module
 
 |Option|Description|
 |------|-----------|
-|`apiKey`|API Key from Coinbase.<br><br>**Type:** `string` **REQUIRED**<br>**Example:**`1iO5VjY2bdC3HucJ`<br>**Default value:**none|
-|`apiSecret`|API Secret Key from Coinbase.<br><br>**Type:** `string` **REQUIRED**<br>**Example:**`OwABcDaA5fxK3QTV3gjwvOk358juuXti`<br>**Default value:**none|
+|`apiKey`|API Key from Coinbase.<br><br>**Type:** `string` **REQUIRED**<br>**Example:**`1iO5VjY2bdC3HucJ`<br>**Default value:** none|
+|`apiSecret`|API Secret Key from Coinbase.<br><br>**Type:** `string` **REQUIRED**<br>**Example:**`OwABcDaA5fxK3QTV3gjwvOk358juuXti`<br>**Default value:** none|
 
 ## Use
 Now you can fully use MagicMirror and the MMM-Coinbase module to display your wallet ! Enjoy it well !
