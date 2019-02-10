@@ -64,4 +64,4 @@ Here is the configurable part of the module
 Now you can fully use MagicMirror and the MMM-Coinbase module to display your wallet ! Enjoy it well !
 
 ## Contributing
-If you find any problems, bugs or have questions, please [https://github.com/Porcinet/MMM-Coinbase/issues](open a GitHub issue) in this repository.
+If you find any problems, bugs or have questions, please [open a GitHub issue](https://github.com/Porcinet/MMM-Coinbase/issues) in this repository.
