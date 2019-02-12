@@ -15,7 +15,7 @@ Module.register("MMM-Coinbase", {
     getDom: function() {
         var element = document.createElement("div")
         element.id = "bitcoinWallet"
-        element.innerHTML = "<i class='fab fa-bitcoin'></i> "
+        element.innerHTML = "<i class='fa fa-bitcoin'></i> "
         var subElement = document.createElement("p")
         subElement.id = "bitcoinCounter"
         element.appendChild(subElement)
