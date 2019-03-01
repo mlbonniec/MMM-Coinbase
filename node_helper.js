@@ -12,9 +12,7 @@ module.exports = NodeHelper.create({
         switch(notification) {
             case "DO_YOUR_JOB":
                 client.getAccounts({}, function(err, accounts) {
-                    accounts.forEach(function(acct) {
-                        bal=acct.balance.amount;
-                    });
+                    bal = account[0].balance.amount;
                 });
                 this.sendSocketNotification("I_DID", bal)
             break
