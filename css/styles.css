@@ -7,8 +7,32 @@
  * Edit this file ONLY if you know what you're doing *
  *****************************************************/
 
-#bitcoinCounter {display: inline-block; margin: 0;}
+.icon {display: inline-block; margin: 0;}
+.wallet {margin: 0;}
 
+span {
+    line-height: 1;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+    flex: 1;
+    margin: 0;
+}
+
+.right {
+    float: right;
+}
+  
 .fab {
     font-family: 'FontAwesome';
     -moz-osx-font-smoothing: grayscale;
