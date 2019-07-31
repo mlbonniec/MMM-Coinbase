@@ -42,7 +42,10 @@ Add this configuration into `config.js` file's
     header: "Coinbase", // optional
         config: {
             apiKey: "YOUR API KEY", // the key previously copied
-            apiSecret: "YOUR API SECRET KEY" // the secret key previously copied
+            apiSecret: "YOUR API SECRET KEY",
+            currencies: ["BTC"] // list of currencies
+            icons: true, // currently only Ethereum and Bitcoin supported
+            labels: false  // shows currency labels (e.g. BTC, ETH and so on)
         }
 }
 ```
