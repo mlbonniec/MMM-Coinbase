@@ -68,3 +68,6 @@ Now you can fully use MagicMirror and the MMM-Coinbase module to display your wa
 
 ## Contributing
 If you find any problems, bugs or have questions, please [open a GitHub issue](https://github.com/mlbonniec/MMM-Coinbase/issues) in this repository.
+
+## Contributors
+* [nabbl](https://github.com/nabbl) thank you for your great work!
