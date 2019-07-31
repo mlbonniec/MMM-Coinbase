@@ -4,7 +4,7 @@ Module.register("MMM-Coinbase", {
 		apiKey: "",
 		apiSecret: "",
 		wallet: ["BTC"],
-		icons: true,
+		icons: true, //currently only Bitcoin and Ethereum supported
 		label: false
 		// updateInterval: 1
 	},
