@@ -10,9 +10,10 @@
   "keywords": [
     "magic",
     "mirror",
-    "2",
     "coinbase",
-    "module"
+    "module",
+    "mmm",
+    "mmm-magic-mirror"
   ],
   "author": "Mathis Lebonniec",
   "license": "ISC",

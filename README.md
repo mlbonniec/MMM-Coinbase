@@ -1,8 +1,10 @@
 # MMM-Coinbase
-A module for Michael Teeuw's MagicMirror project that displays your Bitcoin Coinbase balance.
+A module for Michael Teeuw's MagicMirror project that displays your crypto-currency Coinbase balance.  
+The module is now compatible with all crypto-currencies available on Coinbase.
+However, only Bitcoin and Ethereum icons are available. For the other crypto-currencies, the currency symbol is displayed. (e.g. LTC for Litecoin)
 
 ## How it works
-After installing the module and configuring the Coinbase API with your account, the module displays your Bitcoin balance in real time. It is updated every 5 seconds.
+After installing the module and configuring the Coinbase API with your account, the module displays your crypto-currency balance in real time. It is updated every 5 seconds.
 
 ## Screenshot
 <p align="center">
@@ -64,7 +66,7 @@ Here is the configurable part of the module
 |`apiSecret`|API Secret Key from Coinbase.<br><br>**Type:** `string` **REQUIRED**<br>**Example:**`OwABcDaA5fxK3QTV3gjwvOk358juuXti`<br>**Default value:** none|
 
 ## Use
-Now you can fully use MagicMirror and the MMM-Coinbase module to display your wallet ! Enjoy it well !
+Now you can fully use MagicMirror and the MMM-Coinbase module to display your wallets ! Enjoy it well !
 
 ## Contributing
 If you find any problems, bugs or have questions, please [open a GitHub issue](https://github.com/mlbonniec/MMM-Coinbase/issues) in this repository.
