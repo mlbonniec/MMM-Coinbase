@@ -29,7 +29,7 @@ npm install
 ### Step 2 - Create your coinbase API keys
 |!["Step-1"](https://github.com/mlbonniec/MMM-Coinbase/blob/master/img/readme/Step-1.png "Step-1")|!["Step-2"](https://github.com/mlbonniec/MMM-Coinbase/blob/master/img/readme/Step-2.png "Step-2")|!["Step-3"](https://github.com/mlbonniec/MMM-Coinbase/blob/master/img/readme/Step-3.png "Step-3")|
 |-------------|-------------|-------------|
-|<p align="center">Go to API Access</p>|<p align="center">Click `+ New API Key`</p>|<p align="center">Check `BTC Wallet` and `wallet:accounts:read`</p>|
+|<p align="center">Go to API Access</p>|<p align="center">Click `+ New API Key`</p>|<p align="center">Check `BTC Wallet` (or `LTC Wallet`, `ETH` ...) and `wallet:accounts:read`</p>|
 
 |!["Step-4"](https://github.com/mlbonniec/MMM-Coinbase/blob/master/img/readme/Step-4.png "Step-4")|!["Step-5"](https://github.com/mlbonniec/MMM-Coinbase/blob/master/img/readme/Step-5.png "Step-5")|
 |-------------|-------------|
@@ -45,7 +45,7 @@ Add this configuration into `config.js` file's
         config: {
             apiKey: "YOUR API KEY", // the key previously copied
             apiSecret: "YOUR API SECRET KEY",
-            wallet: ["BTC"], // list of currencies
+            wallet: ["BTC", "LTC"], // list of currencies to display
             icons: true, // currently only Ethereum and Bitcoin supported
             label: false  // shows currency labels (e.g. BTC, ETH and so on)
         }
