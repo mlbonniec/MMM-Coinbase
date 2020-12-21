@@ -1,21 +1,21 @@
-var NodeHelper = require("node_helper");
-var Client = require('coinbase').Client;
-
-var bal;
+const NodeHelper = require("node_helper");
+const {Client} = require("coinbase");
 
 module.exports = NodeHelper.create({
-    start: function() {
-        bal = 0;
-    },
-    socketNotificationReceived: function(notification, payload) {
-        var client = new Client({'apiKey': payload.apiKey, 'apiSecret': payload.apiSecret});
-        switch(notification) {
-            case "DO_YOUR_JOB":
-                client.getAccounts({}, function(err, accounts) {
-                    bal = account[0].balance.amount;
-                });
-                this.sendSocketNotification("I_DID", bal)
-            break
-        }
-    },
-})
+	start: () => {},
+	socketNotificationReceived: function(notification, payload) {
+		const client = new Client({apiKey: payload.apiKey, apiSecret: payload.apiSecret, strictSSL: false});
+		switch(notification) {
+			case "GET_ACCOUNTS":
+				const helper = this;
+				client.getAccounts({}, (err, accounts) => {
+					if(err)
+						throw err;
+
+					helper.sendSocketNotification("ACCOUNTS", accounts.filter(a => payload.wallet.includes(a.currency)));
+				});
+
+				break;
+			}
+	},
+});

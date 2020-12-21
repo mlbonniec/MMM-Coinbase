@@ -1,21 +1,21 @@
-/*****************************************************
+/****************************************************
  * Magic Mirror                                      *
  * MMM-Coinbase CSS                                  *
  *                                                   *
  * By Mathis Le Bonniec                              *
+ * https://github.com/mlbonniec                      *
  *                                                   *
  * Edit this file ONLY if you know what you're doing *
- *****************************************************/
+ ****************************************************/
 
-#bitcoinCounter {display: inline-block; margin: 0;}
+.icon {display: inline-block; margin: 0;}
+.wallet {margin: 0;}
 
-.fab {
-    font-family: 'FontAwesome';
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-}
+span {line-height: 1;}
+
+.right {float: right;}
+.row {display: flex; flex-direction: row; flex-wrap: wrap; width: 100%; margin-bottom: .5rem;}
+.row:last-child {margin-bottom: 0;}
+.column {display: flex; flex-direction: column; flex-basis: 33%; flex: 1; margin: 0;}
+.fab {font-family: 'FontAwesome'; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1;}
+.currency-name {margin: 0;}

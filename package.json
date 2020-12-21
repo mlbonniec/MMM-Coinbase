@@ -5,21 +5,22 @@
   "main": "MMM-Coinbase.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Porcinet/MMM-Coinbase.git"
+    "url": "git+https://github.com/mlbonniec/MMM-Coinbase.git"
   },
   "keywords": [
     "magic",
     "mirror",
-    "2",
     "coinbase",
-    "module"
+    "module",
+    "mmm",
+    "mmm-magic-mirror"
   ],
-  "author": "Porcinet",
+  "author": "Mathis Lebonniec",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Porcinet/MMM-Coinbase/issues"
+    "url": "https://github.com/mlbonniec/MMM-Coinbase/issues"
   },
-  "homepage": "https://github.com/Porcinet/MMM-Coinbase#readme",
+  "homepage": "https://github.com/mlbonniec/MMM-Coinbase#readme",
   "dependencies": {
     "coinbase": "^2.0.8"
   }
