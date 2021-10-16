@@ -47,7 +47,8 @@ Add this configuration into `config.js` file's
             apiSecret: "YOUR API SECRET KEY",
             wallet: ["BTC", "LTC"], // list of currencies to display
             icons: true, // currently only Ethereum and Bitcoin supported
-            label: false  // shows currency labels (e.g. BTC, ETH and so on)
+            label: false,  // shows currency labels (e.g. BTC, ETH and so on)
+	    native_amounts: false //show wallets as native amounts (e.g. USD, EUR, etc)	
         }
 }
 ```

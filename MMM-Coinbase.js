@@ -5,7 +5,8 @@ Module.register("MMM-Coinbase", {
 		apiSecret: "",
 		wallet: ["BTC"],
 		icons: true, // currently only Bitcoin and Ethereum supported
-		label: false
+		label: false,
+		native_amounts: false
 		// updateInterval: 1
 	},
 
@@ -34,10 +35,9 @@ Module.register("MMM-Coinbase", {
 		const module = this;
 		const config = this.config;
 		const icons = this.icons;
-		
+
 		this.cryptoData.forEach((accts) => {
 			module.balance += parseInt(accts.native_balance.amount);
-			
 			// check if currency is in config
 			if(config.wallet.indexOf(accts.currency) > -1) {
 				// add div ROW for currency
@@ -67,7 +67,10 @@ Module.register("MMM-Coinbase", {
 
 				const columnAmountElement = document.createElement("div");
 				columnAmountElement.className = "column";
-				columnAmountElement.innerHTML = "<span>" + accts.balance.amount + "</span>";
+				if (config.native_amounts)
+					columnAmountElement.innerHTML = "<span>" + accts.native_balance.amount + " " + accts.native_balance.currency + "</span>";
+				else
+					columnAmountElement.innerHTML = "<span>" + accts.balance.amount + "</span>";
 
 				rowElement.appendChild(columnAmountElement);
 				elem.appendChild(rowElement);
@@ -84,7 +87,7 @@ Module.register("MMM-Coinbase", {
 				setInterval(() => {
 					this.sendSocketNotification("GET_ACCOUNTS", {apiKey: this.config.apiKey, apiSecret: this.config.apiSecret, wallet: this.config.wallet});
 				}, 5000);
-				
+
 				break;
 			}
 	},
